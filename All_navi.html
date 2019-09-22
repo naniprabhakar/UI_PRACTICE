@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <title>HTML  Tags</title>
+        
+        <style>
+            header{
+                    background-color: deepskyblue;
+                }
+                .Hea{
+                    display: inline-block;
+                    margin-left: 100px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    position: relative;
+                    left: 10%;
+                }
+
+                /*  */
+                nav 
+                {
+                    background-color: hotpink;
+                    border: 2px solid red;
+                    float: left;
+                    width: 200px;
+                    height: 1800px;
+                    margin: 20px;
+                    
+                }
+
+                li{
+                    list-style: none;
+                    margin: 50px 10px;
+                }
+                
+                .Head
+                {
+                    background-color: darkolivegreen;
+                    text-align: center;
+                    margin-left: 230px;
+                }
+                a
+                {
+                    text-decoration: none;
+                }
+                    
+        </style>
+
+        <link rel="icon" href="G:\Images\P-logo.jpg" type="image/x-icon">
+
+    </head>
+    <body>
+            <header>
+                    <ul>
+                        <li class="Hea">Home</li>
+                        <li class="Hea">Maps</li>
+                        <li class="Hea">News</li>
+                        <li class="Hea">Images</li>
+                        <li class="Hea">Book</li>
+                        <li class="Hea">Videos</li>
+                    </ul>
+                </header>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="G:\ALL_TECHNOLOGIES\HTML\Headings.html">Headings</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\HTML\Paragraph.html">Paragraph</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\HTML\TT_tags.html">TT tags</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\HTML\Pre_Tag.html">Pre Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\HTML\Bold_tag.html">Bold Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\HTML\Delete_Tag.html"> Delete Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\HTML.html">Mark Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\CSS.html">Marquee Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\JAVA_SCRIPT.html">Super Script Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\REACTJS.html">Sub Script Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\NODEJS.html">Italic Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\TYPE.html"> Underline Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\HTML.html">Insert Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\CSS.html">Font Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\JAVA_SCRIPT.html">Span tags</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\REACTJS.html">Img Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\NODEJS.html">Un Ordered Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\TYPE.html"> ordered Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\HTML.html">Table Tags</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\CSS.html">Audio Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\JAVA_SCRIPT.html">Video tags</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\REACTJS.html">Description list Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\NODEJS.html">Meter Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\TYPE.html"> Progress Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\HTML.html">Anchor Tag</a></li>
+                        <li><a href="G:\ALL_TECHNOLOGIES\MY_Practice\CSS.html">Form Tag</a></li>
+                    </ul>
+                </nav>
+
+                <h1 class="Head">Functions</h1>
+
+                <script>
+                    var id = 20;
+                    var name = "Ravi";
+                    var total = 25000;
+                    var a = 20;
+                    var b = 30;
+        
+                    function ldisplay() //local variable
+                    {
+                        var village = "GUN";
+                        var city = "Guntur";
+                        document.writeln(village + "  "+ city); 
+                        document.write("<br>");
+                    }
+                        ldisplay();
+        
+        
+                    function gdisplay()  //global variable
+                    {
+                        document.writeln(id +" "+ name);
+                        document.write("<br>");
+                    }
+                        gdisplay(); 
+                    
+                     
+                    function withdraw(eamount)  //withdraw function //parameterized function
+                    {
+                        var total = 25000;      //local variable
+                        total = total-eamount;
+                        document.writeln("you have withdraw:" + eamount);
+                        document.write("<br>");
+                    }
+                        withdraw(5000); 
+        
+                    function withdraw(amounttt)  //global variable
+                    {
+                        total = total - amounttt;
+                        document.writeln("you have withdraw:"+ amounttt);
+                        document.write("<br>");
+                    }  
+                        withdraw(2000);
+        
+                    function ministatement()  //non parameterizwd function
+                    {
+                        ministatement = total;
+                        document.writeln("you have balance:" + ministatement);
+                        document.write("<br>");
+                    }
+                        ministatement();
+                    
+                    function address()
+                    {
+                        var village = "jonnalagadda";
+                        var city = "Guntur";
+                        var state = "AP";
+                        document.writeln(village+" "+city+" "+state);
+                        document.write("<br>");
+                    }
+                        address();
+        
+                    function add()  //global variable
+                    {
+                        c = a+b;
+                        document.write("Add value:" + c);
+                        document.write("<br>");
+                    }
+                        add();
+                    
+                    function sub()   //global variable
+                    {
+                        c = a-b;
+                        document.write("Sub Value:"+ c);
+                        document.write("<br>");
+                    }
+                        sub();
+                    
+                    function adding() //local variable
+                    {
+                        var a = 20;
+                        var b = 30;
+                        c = a+b;
+                        document.writeln("Adding Value:" + c);
+                        document.write("<br>");
+                    }
+                        adding();
+        
+                    function subb() //local variable
+                    {
+                        var a = 50;
+                        var b = 30;
+                        c = a-b;
+                        document.writeln("subb value:"+ c);
+                        document.write("<br>");
+                    }
+                        subb();
+                    
+                    function addings()  //non parameterized function
+                    {
+                        var a = 90;
+                        var b = 30;
+                        c = a+b;
+                        document.writeln("Addings Values:"+c);
+                        document.writeln("<br>");
+                    }
+                       addings();
+                    
+        
+                    function mul()          //non parameterized function
+                    {
+                        var a=20;
+                        var b=30;
+                        c=a*b;
+                        document.writeln("Multiplication Value:"+c);
+                        document.writeln("<br>");
+                    }
+                        mul();
+        
+                    
+                        function divistion()   //non parameterized function
+                    {
+                        var a=100;
+                        var b=10;
+                        c=a/b;
+                        document.writeln("Divistion Value:"+c);
+                        document.writeln("<br>");
+                    }
+                        divistion();
+        
+                    function added(a,b,c)  //parameterized function
+                    {
+                        total = a+b+c;
+                        document.writeln("Added value:"+total);
+                        document.writeln("<br>");
+                    }
+                        added(5,6,8);
+        
+                    function subtraction(a,b,c)    //parameterized function
+                    {
+                        total= a-b-c;
+                        document.writeln("Subtration Value:"+ total);
+                        document.writeln("<br>");
+                    }
+                        subtraction(90,50,30);
+                    
+                    
+                    function multiplications(a,b,c)  //parameterized function
+                    {
+                        total = a*b*c;
+                        document.writeln("Multiplications value:"+total);
+                        document.writeln("<br>");
+                    }
+                        multiplications(5,6,8);
+                    
+                        function divistions(a,b)  //parameterized function
+                    {
+                        total = a/b;
+                        document.writeln("Divistions value:"+total);
+                        document.writeln("<br>");
+                    }
+                        divistions(100,6);
+                    
+                    
+                        function nani()  //non parameterized function
+                    {
+                        var Prabhakar = "Ravi";
+                        c = Prabhakar;
+                        document.writeln("Name:"+c);
+                        document.writeln("<br>");
+                    }
+                        nani();
+                    
+                        function pra()
+                    {
+                        var h = "Hi";
+                        B = h;
+                        document.writeln("HHHHIIII:"+B);
+                        document.writeln("<br>")
+                    }
+                        pra();
+        
+                    
+                </script>
+    </body>
+</html>

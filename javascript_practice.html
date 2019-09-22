@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Javascript Practice</title>
+    </head>
+    <body>
+        <script>
+            function msg()
+            {
+
+                alert("this is ASHOK");
+            }
+            function getsquare(number)
+            {
+                alert(number*number);
+            }
+            function ashok()
+            {
+                return "hi this is kanna";
+                document.write(ashok());
+            }
+            var add= new Function("number1","number2","return number1+number2");
+            document.write(add(10,7));
+            document.write(ashok());
+            
+
+        </script>
+
+        <form action="">
+            <input type="button" onclick="msg()" value="click here"><br><br>
+            <input type="button" onclick="getsquare(10)" value="square value">
+        </form>
+    </body>
+</html>

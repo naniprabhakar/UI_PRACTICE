@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>DOM & BOM</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="User">User</label>&nbsp;&nbsp;
+            <input type="text" name="User" id="User" placeholder="User" required=" "><br><br>
+            <label for="password">PassWord</label>&nbsp;&nbsp;
+            <input type="password" name="password" id="password" placeholder="password" required=" "><br><br>
+            <button type="submit" value="Submit" onclick="return validation();">Submit</button>
+        </form>
+        <script>
+            var na = document.getElementById(User);
+            var pass = document.getelementbyName(password);
+            function validation()
+            {
+                if(na!=null)
+                {
+                    alert("your enter correct user Name");
+                }
+                else
+                {
+                    alert("you are entered worg user Name");
+                }
+            }
+        </script>
+    </body>
+</html>

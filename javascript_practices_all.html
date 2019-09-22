@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <script>
+            var id = 20;
+            var name = "Ravi";
+            var total = 25000;
+            var a = 20;
+            var b = 30;
+
+            function ldisplay() //local variable
+            {
+                var village = "GUN";
+                var city = "Guntur";
+                document.writeln(village + "  "+ city); 
+                document.write("<br>");
+            }
+                ldisplay();
+
+
+            function gdisplay()  //global variable
+            {
+                document.writeln(id +" "+ name);
+                document.write("<br>");
+            }
+                gdisplay(); 
+            
+             
+            function withdraw(eamount)  //withdraw function //parameterized function
+            {
+                var total = 25000;      //local variable
+                total = total-eamount;
+                document.writeln("you have withdraw:" + eamount);
+                document.write("<br>");
+            }
+                withdraw(5000); 
+
+            function withdraw(amounttt)  //global variable
+            {
+                total = total - amounttt;
+                document.writeln("you have withdraw:"+ amounttt);
+                document.write("<br>");
+            }  
+                withdraw(2000);
+
+            function ministatement()  //non parameterizwd function
+            {
+                ministatement = total;
+                document.writeln("you have balance:" + ministatement);
+                document.write("<br>");
+            }
+                ministatement();
+            
+            function address()
+            {
+                var village = "jonnalagadda";
+                var city = "Guntur";
+                var state = "AP";
+                document.writeln(village+" "+city+" "+state);
+                document.write("<br>");
+            }
+                address();
+
+            function add()  //global variable
+            {
+                c = a+b;
+                document.write("Add value:" + c);
+                document.write("<br>");
+            }
+                add();
+            
+            function sub()   //global variable
+            {
+                c = a-b;
+                document.write("Sub Value:"+ c);
+                document.write("<br>");
+            }
+                sub();
+            
+            function adding() //local variable
+            {
+                var a = 20;
+                var b = 30;
+                c = a+b;
+                document.writeln("Adding Value:" + c);
+                document.write("<br>");
+            }
+                adding();
+
+            function subb() //local variable
+            {
+                var a = 50;
+                var b = 30;
+                c = a-b;
+                document.writeln("subb value:"+ c);
+                document.write("<br>");
+            }
+                subb();
+            
+            function addings()  //non parameterized function
+            {
+                var a = 90;
+                var b = 30;
+                c = a+b;
+                document.writeln("Addings Values:"+c);
+                document.writeln("<br>");
+            }
+               addings();
+            
+
+            function mul()          //non parameterized function
+            {
+                var a=20;
+                var b=30;
+                c=a*b;
+                document.writeln("Multiplication Value:"+c);
+                document.writeln("<br>");
+            }
+                mul();
+
+            
+                function divistion()   //non parameterized function
+            {
+                var a=100;
+                var b=10;
+                c=a/b;
+                document.writeln("Divistion Value:"+c);
+                document.writeln("<br>");
+            }
+                divistion();
+
+            function added(a,b,c)  //parameterized function
+            {
+                total = a+b+c;
+                document.writeln("Added value:"+total);
+                document.writeln("<br>");
+            }
+                added(5,6,8);
+
+            function subtraction(a,b,c)    //parameterized function
+            {
+                total= a-b-c;
+                document.writeln("Subtration Value:"+ total);
+                document.writeln("<br>");
+            }
+                subtraction(90,50,30);
+            
+            
+            function multiplications(a,b,c)  //parameterized function
+            {
+                total = a*b*c;
+                document.writeln("Multiplications value:"+total);
+                document.writeln("<br>");
+            }
+                multiplications(5,6,8);
+            
+                function divistions(a,b)  //parameterized function
+            {
+                total = a/b;
+                document.writeln("Divistions value:"+total);
+                document.writeln("<br>");
+            }
+                divistions(100,6);
+            
+            
+                function nani()  //non parameterized function
+            {
+                var Prabhakar = "Ravi";
+                c = Prabhakar;
+                document.writeln("Name:"+c);
+                document.writeln("<br>");
+            }
+                nani();
+            
+                function pra()
+            {
+                var h = "Hi";
+                B = h;
+                document.writeln("HHHHIIII:"+B);
+                document.writeln("<br>")
+            }
+                pra();
+
+            
+        </script>
+    </head>
+    <body>
+        <h1>This is JavaScript Practices</h1>
+        <div style="background-color:teal;color: white; text-align: center; margin: px; border:5px double red;padding: 2px;"> <!-- inline style-->
+            <h2>Hi Ra</h2>  <!-- commend Role-->
+        </div>
+    </body>
+    
+</html>
